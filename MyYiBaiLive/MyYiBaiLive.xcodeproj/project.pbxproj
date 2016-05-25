@@ -92,7 +92,7 @@
 		04C0959C1CF5647B004325D2 /* w_yu.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C0954C1CF5647B004325D2 /* w_yu.png */; };
 		04C0959D1CF5647B004325D2 /* xx1副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C0954D1CF5647B004325D2 /* xx1副本.png */; };
 		04C0959E1CF5647B004325D2 /* xx2副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C0954E1CF5647B004325D2 /* xx2副本.png */; };
-		04C0959F1CF5647B004325D2 /* 易百生活.mov in Resources */ = {isa = PBXBuildFile; fileRef = 04C0954F1CF5647B004325D2 /* 易百生活.mov */; };
+		04C095AA1CF5693B004325D2 /* ShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C095A91CF5693B004325D2 /* ShowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,7 +185,8 @@
 		04C0954C1CF5647B004325D2 /* w_yu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w_yu.png; sourceTree = "<group>"; };
 		04C0954D1CF5647B004325D2 /* xx1副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xx1副本.png"; sourceTree = "<group>"; };
 		04C0954E1CF5647B004325D2 /* xx2副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xx2副本.png"; sourceTree = "<group>"; };
-		04C0954F1CF5647B004325D2 /* 易百生活.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "易百生活.mov"; sourceTree = "<group>"; };
+		04C095A81CF5693B004325D2 /* ShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowView.h; sourceTree = "<group>"; };
+		04C095A91CF5693B004325D2 /* ShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,14 +219,9 @@
 		04C094E11CF563D7004325D2 /* MyYiBaiLive */ = {
 			isa = PBXGroup;
 			children = (
-				04C094E51CF563D7004325D2 /* AppDelegate.h */,
-				04C094E61CF563D7004325D2 /* AppDelegate.m */,
-				04C094E81CF563D7004325D2 /* ViewController.h */,
-				04C094E91CF563D7004325D2 /* ViewController.m */,
-				04C094EB1CF563D7004325D2 /* Main.storyboard */,
-				04C094EE1CF563D7004325D2 /* Assets.xcassets */,
-				04C094F01CF563D7004325D2 /* LaunchScreen.storyboard */,
-				04C094F31CF563D7004325D2 /* Info.plist */,
+				04C095A01CF567E5004325D2 /* 解锁页面 */,
+				04C095A31CF5681C004325D2 /* Controller */,
+				04C095A41CF5685C004325D2 /* 系统自带文件 */,
 				04C094E21CF563D7004325D2 /* Supporting Files */,
 			);
 			path = MyYiBaiLive;
@@ -260,7 +256,6 @@
 				04C0953C1CF5647B004325D2 /* weather副本 */,
 				04C0954D1CF5647B004325D2 /* xx1副本.png */,
 				04C0954E1CF5647B004325D2 /* xx2副本.png */,
-				04C0954F1CF5647B004325D2 /* 易百生活.mov */,
 			);
 			path = "图片材料";
 			sourceTree = "<group>";
@@ -375,6 +370,53 @@
 			path = "weather副本";
 			sourceTree = "<group>";
 		};
+		04C095A01CF567E5004325D2 /* 解锁页面 */ = {
+			isa = PBXGroup;
+			children = (
+				04C095A21CF5680C004325D2 /* Model */,
+				04C095A11CF567FA004325D2 /* View */,
+			);
+			name = "解锁页面";
+			sourceTree = "<group>";
+		};
+		04C095A11CF567FA004325D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C095A81CF5693B004325D2 /* ShowView.h */,
+				04C095A91CF5693B004325D2 /* ShowView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		04C095A21CF5680C004325D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04C095A31CF5681C004325D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04C094E81CF563D7004325D2 /* ViewController.h */,
+				04C094E91CF563D7004325D2 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04C095A41CF5685C004325D2 /* 系统自带文件 */ = {
+			isa = PBXGroup;
+			children = (
+				04C094E51CF563D7004325D2 /* AppDelegate.h */,
+				04C094E61CF563D7004325D2 /* AppDelegate.m */,
+				04C094EB1CF563D7004325D2 /* Main.storyboard */,
+				04C094EE1CF563D7004325D2 /* Assets.xcassets */,
+				04C094F01CF563D7004325D2 /* LaunchScreen.storyboard */,
+				04C094F31CF563D7004325D2 /* Info.plist */,
+			);
+			name = "系统自带文件";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,7 +502,6 @@
 				04C0957C1CF5647B004325D2 /* b_4.png in Resources */,
 				04C095581CF5647B004325D2 /* c_10.png in Resources */,
 				04C094F21CF563D7004325D2 /* LaunchScreen.storyboard in Resources */,
-				04C0959F1CF5647B004325D2 /* 易百生活.mov in Resources */,
 				04C095781CF5647B004325D2 /* b_0.png in Resources */,
 				04C095521CF5647B004325D2 /* c_item0@2x副本.jpg in Resources */,
 				04C095831CF5647B004325D2 /* s_1.png in Resources */,
@@ -527,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C094EA1CF563D7004325D2 /* ViewController.m in Sources */,
+				04C095AA1CF5693B004325D2 /* ShowView.m in Sources */,
 				04C094E71CF563D7004325D2 /* AppDelegate.m in Sources */,
 				04C094E41CF563D7004325D2 /* main.m in Sources */,
 			);

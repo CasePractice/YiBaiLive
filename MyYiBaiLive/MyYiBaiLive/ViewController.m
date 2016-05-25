@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ShowView.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    ShowView*myShowView=[[ShowView alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    [self.view addSubview:myShowView];
+    [myShowView addBackgroundImageView];
+    [myShowView addGreenButton];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
